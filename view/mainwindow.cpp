@@ -12,3 +12,10 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::showSettings()
+{
+    SettingsDialogHandler sdh;
+    sdh.exec();
+}
+

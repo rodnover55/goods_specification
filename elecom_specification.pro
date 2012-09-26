@@ -13,8 +13,25 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+    model/applicationconfig.cpp \
+    model/qregistry.cpp \
+    model/configreader.cpp \
+    view/mainwindow.cpp \
+    view/settingsdialog.cpp \
+    controller/settingsdialoghandler.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += \
+    baseconfigreader.h \
+    model/applicationconfig.h \
+    model/qregistry.h \
+    model/configreader.h \
+    view/mainwindow.h \
+    defines.h \
+    view/settingsdialog.h \
+    controller/settingsdialoghandler.h
 
-FORMS    += mainwindow.ui
+FORMS    += \
+    view/mainwindow.ui \
+    view/settingsdialog.ui
+
+QMAKE_CXXFLAGS += -std=c++0x

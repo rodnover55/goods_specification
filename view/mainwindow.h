@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "controller/settingsdialoghandler.h"
 
 namespace Ui {
 class MainWindow;
@@ -17,6 +18,9 @@ public:
     
 private:
     Ui::MainWindow *ui;
+
+public slots:
+    void showSettings();
 };
 
 #endif // MAINWINDOW_H
